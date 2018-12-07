@@ -1,0 +1,35 @@
+.btn {
+  cursor: pointer;
+  letter-spacing: 0.128em;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400;
+  background: var(--white);
+  border: none;
+  border-radius: 20px;
+  color: var(--black);
+  font-size: 12px;
+  line-height: 36px;
+  padding: 0 1em;
+  margin: 0 0.5em;
+  text-transform: uppercase;
+  transition: all 100ms linear;
+  border: 2px solid transparent;
+
+  &:focus {
+    outline: 0 !important;
+  }
+
+  @media all and (max-width: 960px) {
+    margin-top: 1em;
+  }
+}
+
+.active,
+.btn:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+.filtersApplied {
+  border: 2px solid var(--green);
+}

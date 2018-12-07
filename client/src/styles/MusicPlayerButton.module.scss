@@ -1,0 +1,19 @@
+.iconBtn {
+  cursor: pointer;
+  background: var(--white);
+  height: 46px;
+  width: 62px;
+  margin-left: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease;
+  transition-property: background, color;
+}
+
+.active,
+.iconBtn:hover {
+  background: var(--black);
+  color: var(--white);
+}

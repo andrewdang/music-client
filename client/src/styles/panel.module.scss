@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.5em;
+
+  h3 {
+    margin-left: auto;
+  }
+}
+
+.closeBtn {
+  cursor: pointer;
+  margin: 0 3em 0 auto;
+  display: flex;
+  font-size: 1.2em;
+  align-items: center;
+}
+
+.panel {
+  bottom: 55px;
+  background: var(--white);
+  border-top: 1px solid #b7b7b7;
+  position: fixed;
+  transform: translateY(100vh);
+  transition: transform 0.4s;
+  width: 100%;
+  z-index: 99;
+}
+
+.content {
+  overflow-y: scroll;
+  max-height: 48vh;
+  padding: 2em;
+}
+
+.entered {
+  transform: translateY(0vh);
+}
+
+.exiting {
+  transform: translateY(100vh);
+}

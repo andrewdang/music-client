@@ -1,0 +1,42 @@
+.musicPlayer,
+.panelBtns,
+.btnLabel,
+.songBtns,
+.innerLeft {
+  display: flex;
+}
+
+.musicPlayer {
+  background: var(--lightest-grey);
+  height: 55px;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panelBtns {
+  border-left: 1px solid var(--light-grey);
+  margin-right: 5px;
+}
+
+.songBtns {
+  margin-right: 5px;
+}
+
+.btnLabel {
+  align-items: center;
+  text-transform: uppercase;
+  margin-right: 8px;
+  letter-spacing: 0.128em;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.innerLeft {
+  margin-left: auto;
+}

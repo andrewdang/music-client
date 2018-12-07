@@ -1,0 +1,46 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 5em 0;
+
+  @media all and (max-width: 860px) {
+    justify-content: space-evenly;
+  }
+
+  @media all and (max-width: 768px) {
+    display: none;
+    margin-right: 1em;
+  }
+}
+
+.logo {
+  height: 31px;
+  width: 176px;
+
+  @media all and (max-width: 860px) {
+    display: none;
+  }
+}
+
+.link {
+  color: var(--white);
+  font: normal 400 1.8em "elena-web-basic", georgia;
+  font-size: 18px;
+  letter-spacing: 0.0032em;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  margin: 0 1em;
+
+  &:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    transition: border-bottom 125ms linear;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .nav .logo,
+  .link {
+    display: none;
+  }
+}

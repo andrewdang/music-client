@@ -1,0 +1,28 @@
+:root {
+  --purple: #8a4fab;
+  --light-purple: #9661b4;
+  --lighter-purple: #a172bc;
+  --lightest-purple: #ad84c4;
+
+  --green: #37b480;
+  --blue: #689ec0;
+  --red: #c92828;
+
+  --black: #3a3532;
+  --lighter-black: #38383c;
+
+  --white: #fff;
+
+  --grey: #999;
+  --dark-grey: #777;
+  --darker-grey: #666;
+  --darkest-grey: #555;
+  --light-grey: #ddd;
+  --lighter-grey: #e7e7e7;
+  --lightest-grey: #eee;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}

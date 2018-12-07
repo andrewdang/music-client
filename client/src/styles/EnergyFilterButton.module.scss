@@ -1,0 +1,125 @@
+.figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media all and (max-width: 940px) {
+    margin: 0 0 0 1em;
+    flex-grow: 1;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .energyIcon {
+      transition: none;
+      transform: scale(0.5);
+      margin-bottom: 0;
+    }
+  }
+}
+
+.energyIcon {
+  margin-bottom: 5px;
+  transition: transform 0.3s;
+}
+
+.bolt {
+  width: 100%;
+}
+
+.tile {
+  &:hover {
+    .bolt {
+      filter: invert(100%);
+    }
+
+    .energyIcon {
+      transform: translateY(-10px);
+
+      @media all and (max-width: 940px) {
+        transform: scale(0.5);
+      }
+    }
+
+    .spinner {
+      stroke: var(--white);
+      animation-play-state: running;
+    }
+  }
+
+  @media all and (max-width: 940px) {
+    flex-direction: row-reverse;
+    height: 70px;
+  }
+}
+
+.spinner {
+  stroke-width: 4;
+  stroke-dashoffset: 0;
+  transform-origin: 50% 50%;
+}
+
+.low {
+  composes: spinner;
+  animation: circle 5s reverse linear infinite;
+  animation-play-state: paused;
+  stroke-dasharray: 185;
+  stroke-dashoffset: 200.7371368408203;
+}
+
+.lowMed {
+  composes: spinner;
+  animation: circle 3s reverse linear infinite;
+  animation-play-state: paused;
+  stroke-dasharray: 171;
+  stroke-dashoffset: 200.7371368408203;
+}
+
+.medToHigh {
+  composes: spinner;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 200.7371368408203;
+}
+
+.med {
+  composes: medToHigh;
+  animation: circle 1.5s reverse linear infinite;
+  animation-play-state: paused;
+}
+
+.medHigh {
+  composes: medToHigh;
+  animation: circle 1s reverse linear infinite;
+  animation-play-state: paused;
+}
+
+.medHighOuter {
+  composes: spinner;
+  stroke-dasharray: 195;
+  stroke-dashoffset: 244.6483612060547;
+  animation: circle 1s linear infinite;
+  animation-play-state: paused;
+}
+
+.high {
+  composes: medToHigh;
+  animation: circle 0.7s reverse linear infinite;
+  animation-play-state: paused;
+}
+
+.highOuter {
+  composes: spinner;
+  stroke-dasharray: 95 25;
+  stroke-dashoffset: 244.6483612060547;
+  animation: circle 1.5s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

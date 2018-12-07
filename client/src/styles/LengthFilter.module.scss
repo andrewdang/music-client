@@ -1,0 +1,67 @@
+.wrapper {
+  width: 100%;
+}
+
+.instructions {
+  width: 100%;
+  font-size: 16px;
+  color: #3a3532;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.minMax {
+  width: 100%;
+  display: flex;
+  margin: 0 auto 1.5rem;
+  justify-content: space-between;
+  font-style: italic;
+
+  @media all and (max-width: 1200px) {
+    margin-top: 1rem;
+    width: 86%;
+  }
+}
+
+.greyBar {
+  display: block;
+  margin: 0 auto;
+  background: radial-gradient(ellipse at center, #ccc 0%, #ccc 28%, transparent 30%);
+  background-size: 83px 84px;
+  background-repeat: repeat-x;
+  background-position: -22px center;
+  width: 98%;
+  height: 50px;
+
+  @media all and (max-width: 1200px) {
+    width: 83%;
+  }
+
+  @media all and (max-width: 640px) {
+    background-size: 43px 44px;
+  }
+}
+
+.purpleBar {
+  display: block;
+  margin: 0 auto;
+  background: radial-gradient(
+    ellipse at center,
+    var(--purple) 0%,
+    var(--purple) 28%,
+    transparent 30%
+  );
+  background-size: 83px 84px;
+  background-repeat: repeat-x;
+  background-position: -22px center;
+  width: 98%;
+  height: 50px;
+
+  @media all and (max-width: 1200px) {
+    width: 83%;
+  }
+
+  @media all and (max-width: 640px) {
+    background-size: 43px 44px;
+  }
+}

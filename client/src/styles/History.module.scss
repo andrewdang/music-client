@@ -1,0 +1,47 @@
+.historyTable {
+  background: var(--white);
+  height: 48vh;
+}
+
+.tableHeaderRow,
+.songRow {
+  display: grid;
+  grid-template-columns: 0.7fr 3fr 3fr 2fr 2fr 0.5fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+
+.tableHeaderRow div {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  border-bottom: 1px solid var(--lighter-grey);
+  padding-bottom: 1.5em;
+  color: var(--grey);
+}
+
+.songRow {
+  justify-content: center;
+  border-bottom: 1px solid var(--lighter-grey);
+  padding: 3px 0;
+
+  div:not(:first-child) {
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: "elena-web-basic", georgia;
+  }
+}
+
+.playBtn {
+  cursor: pointer;
+  color: var(--lighter-black);
+  background: var(--lightest-grey);
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

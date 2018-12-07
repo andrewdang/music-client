@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  grid-gap: 3.25em;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  div {
+    background: var(--lightest-grey);
+    width: 248px;
+    height: 290px;
+    margin: 0 auto;
+  }
+}

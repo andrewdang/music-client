@@ -1,0 +1,21 @@
+.drawerNav {
+  background: #dcdcdc;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 3px 0;
+  transition: right 0.2s ease-out;
+  z-index: 100;
+
+  @media all and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.open {
+  z-index: 100;
+  right: 358px;
+}

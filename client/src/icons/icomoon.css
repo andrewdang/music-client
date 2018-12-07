@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("./icomoon.eot");
+  src: url("./icomoon.eot") format("embedded-opentype"), url("./icomoon.ttf") format("truetype"),
+    url("./icomoon.woff") format("woff"), url("./icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\e907";
+}
+
+.icon-marmonews:before {
+  content: "\e906";
+}
+
+.icon-login:before {
+  content: "\e971";
+}
+
+.icon-register:before {
+  content: "\e973";
+}
+
+.icon-search:before {
+  content: "\e903";
+}
+
+.icon-star:before {
+  content: "\e905";
+}
+
+.icon-cross:before {
+  content: "\ea0f";
+}
+
+.icon-exit:before {
+  content: "\ea14";
+}
+
+.icon-plus:before {
+  content: "\e904";
+}
+
+.icon-play:before {
+  content: "\ea1c";
+}
+
+.icon-pause:before {
+  content: "\ea1d";
+}
+
+.icon-backwards:before {
+  content: "\ea1f";
+}
+
+.icon-forwards:before {
+  content: "\ea20";
+}
+
+.icon-download:before {
+  content: "\e901";
+}
+
+.icon-radio:before {
+  content: "\e900";
+}
+
+.icon-help:before {
+  content: "\e902";
+}
+
+.icon-clock:before {
+  content: "\e94e";
+}
+
+.icon-open-book:before {
+  content: "\e90c";
+}
+
+.icon-share:before {
+  content: "\e909";
+}
+
+.icon-volume-high:before {
+  content: "\ea26";
+}
+
+.icon-volume-medium:before {
+  content: "\ea27";
+}
+
+.icon-volume-low:before {
+  content: "\ea28";
+}
+
+.icon-volume-mute:before {
+  content: "\ea29";
+}
+
+.icon-volume-mute-x:before {
+  content: "\ea2a";
+}
+
+.icon-volume-increase:before {
+  content: "\ea2b";
+}
+
+.icon-volume-decrease:before {
+  content: "\ea2c";
+}
+
+.icon-caret-up:before {
+  content: "\e908";
+}
+
+.icon-caret-down:before {
+  content: "\e90e";
+}
+
+.icon-caret-right:before {
+  content: "\e90b";
+}
+
+.icon-caret-left:before {
+  content: "\e90d";
+}
+
+.icon-mic:before {
+  content: "\e911";
+}
+
+.icon-circle-x:before {
+  content: "\e90f";
+}
+
+.icon-x:before {
+  content: "\e5cd";
+}
+
+.icon-male:before {
+  content: "\e913";
+}
+
+.icon-female:before {
+  content: "\e914";
+}
+
+.icon-logout:before {
+  content: "\e910";
+}
+
+.icon- {
+  height: 36px;
+}
+
+@media all and (max-width: 640px) {
+  .icon- {
+    height: 26px;
+  }
+}

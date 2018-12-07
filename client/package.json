@@ -1,0 +1,55 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.5",
+    "mobx": "^5.5.1",
+    "mobx-react": "^5.3.4",
+    "mobx-react-router": "^4.0.5",
+    "normalize.css": "^8.0.0",
+    "qs": "^6.5.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-map-gl": "^3.3.7",
+    "react-ranger": "^1.0.5",
+    "react-responsive-select": "^4.5.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^2.0.5",
+    "react-sidebar": "^3.0.2",
+    "react-slick": "^0.23.2",
+    "react-transition-group": "^2.5.0",
+    "source-map-explorer": "^1.6.0"
+  },
+  "devDependencies": {
+    "cypress": "^3.1.0",
+    "node-sass": "^4.9.4",
+    "prop-types": "^15.6.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "react-scripts test --env=jsdom",
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  }
+}

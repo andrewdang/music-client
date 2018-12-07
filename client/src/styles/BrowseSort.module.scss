@@ -1,0 +1,17 @@
+.selectWrapper {
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: flex-end;
+
+  @media all and (max-width: 940px) {
+    padding: 1.5em 1em;
+  }
+}
+
+.select {
+  width: 230px;
+
+  @media all and (max-width: 940px) {
+    width: 100%;
+  }
+}

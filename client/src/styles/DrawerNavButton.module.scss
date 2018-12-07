@@ -1,0 +1,89 @@
+.navBtn {
+  height: 50px;
+  width: 50px;
+  background: var(--white);
+  margin: 1px 4px;
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 25px;
+  color: var(--lighter-black);
+}
+
+.indicator {
+  font-size: 14px;
+  color: white;
+  background: var(--green);
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  float: left;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 10px;
+  height: 16px;
+  width: 16px;
+  z-index: 2;
+  text-align: center;
+  pointer-events: none;
+}
+
+.active .icon,
+.icon:hover {
+  color: var(--purple);
+}
+
+.toolTip {
+  font-size: 13px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400;
+  height: 50px;
+  padding: 0 1em;
+  background: var(--purple);
+  position: absolute;
+  right: 54px;
+  color: var(--white);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* long text like marmonews causes page to bounce due to scrollbar appearing */
+  animation: toolTipShow 0.1s ease-out;
+}
+
+@keyframes toolTipShow {
+  from {
+    color: transparent;
+    width: 0;
+    padding: 0;
+  }
+  to {
+    color: var(--white);
+    width: auto;
+  }
+}
+
+.toolTipArrow {
+  position: absolute;
+  background: var(--purple);
+  left: 4px;
+
+  &:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: var(--purple);
+    border-width: 5px;
+    top: 18px;
+  }
+}

@@ -1,0 +1,20 @@
+.knob {
+  font-family: "elena-web-basic", georgia;
+  font-weight: 400;
+  font-size: 22px;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  color: #3a3532;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+
+  @media all and (max-width: 640px) {
+    font-size: 16px;
+    width: 60px;
+    height: 60px;
+  }
+}

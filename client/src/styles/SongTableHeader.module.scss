@@ -1,0 +1,15 @@
+.songTableHeader {
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr 1.5fr 1.5fr 0.5fr;
+  border-bottom: 1px solid var(--lighter-grey);
+  padding: 0 1em;
+  text-align: left;
+
+  div {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 1.75em 0em;
+    color: var(--grey);
+  }
+}

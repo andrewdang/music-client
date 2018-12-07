@@ -1,0 +1,25 @@
+.closeBar {
+  background: var(--white);
+  display: flex;
+  height: 43px;
+  position: fixed;
+}
+
+.whiteRectangle {
+  background: #f8f7f7;
+  width: 315px;
+}
+
+.whiteIconBox {
+  color: var(--lighter-black);
+  cursor: pointer;
+  display: flex;
+  font-size: 12px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.25em;
+
+  &:hover {
+    color: var(--purple);
+  }
+}

@@ -1,0 +1,36 @@
+.drawer {
+  background-color: #f1efee;
+  width: 358px;
+  height: 100%;
+  overflow: scroll;
+
+  @media all and (max-width: 768px) {
+    display: none;
+  }
+}
+
+/******** drawer transitions *********/
+
+.contentWrapper {
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+  display: none;
+}
+
+.entering {
+  opacity: 0;
+}
+
+.entered {
+  opacity: 1;
+  display: block;
+}
+
+.exiting {
+  transform: scale(0.9);
+  display: block;
+}
+
+.exited {
+  display: none;
+}

@@ -1,0 +1,50 @@
+.btn {
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  letter-spacing: 0.128em;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1px 0 10px 0;
+  width: 100%;
+}
+
+.tall {
+  composes: btn;
+  background: var(--black);
+  height: 60px;
+  line-height: 60px;
+
+  &:hover {
+    background-color: #262220;
+  }
+}
+
+.short {
+  composes: btn;
+  background: #5f5a58;
+  height: 40px;
+  line-height: 40px;
+
+  &:hover {
+    background-color: var(--black);
+  }
+}
+
+.transparentPurple {
+  composes: btn;
+  background: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+  width: auto;
+  padding: 1em 4em;
+  transition: all 0.1s linear;
+
+  &:hover {
+    color: #8a4fab;
+    background: var(--white);
+  }
+}

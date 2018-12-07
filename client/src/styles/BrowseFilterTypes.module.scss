@@ -1,0 +1,23 @@
+.filtersWrapper {
+  display: flex;
+  max-width: 1140px;
+  background: var(--lightest-grey);
+}
+
+.filterTypes {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 1.75em 0;
+}
+
+.filterButtons {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterComponentWrapper {
+  padding-bottom: 3em;
+}

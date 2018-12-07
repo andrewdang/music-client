@@ -1,0 +1,32 @@
+.corner {
+  color: var(--black);
+  font-size: 18px;
+  position: relative;
+  top: 0.75em;
+  z-index: 1;
+  height: 0;
+  text-align: left;
+}
+
+.leftCorner {
+  composes: corner;
+  left: 0.75em;
+}
+
+.whiteLeftCorner {
+  composes: leftCorner;
+  color: var(--white);
+}
+
+.rightCorner {
+  composes: corner;
+  color: var(--white);
+  cursor: pointer;
+  right: 0.75em;
+  text-align: right;
+  transition: color 0.1s;
+
+  &:hover {
+    color: var(--light-grey);
+  }
+}

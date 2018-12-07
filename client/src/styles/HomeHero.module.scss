@@ -1,0 +1,63 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background: url(../images/hero_banners/home.jpg) center center / cover no-repeat;
+}
+
+.heroHeader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  color: var(--white);
+  margin-top: 4em;
+}
+
+.title {
+  font-family: "elena-web-basic", georgia;
+  text-align: center;
+}
+
+.mainHeader {
+  composes: title;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  padding-bottom: 20px;
+  font-size: 54px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.subHeader {
+  composes: title;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 3em;
+}
+
+.callToAction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  color: var(--white);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  font-size: 3em;
+  right: 0;
+  margin-bottom: 75px;
+}
+
+.centeredContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}

@@ -1,0 +1,139 @@
+.filtersWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media all and (max-width: 940px) {
+    flex-wrap: wrap;
+  }
+}
+
+.filtersWrapperRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media all and (max-width: 940px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.gridWrapper {
+  display: grid;
+  grid-gap: 2px;
+  max-width: 1140px;
+}
+
+.twoRowGridWrapper {
+  composes: gridWrapper;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.threeRowGridWrapper {
+  composes: gridWrapper;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.tile {
+  font-family: "elena-web-basic", georgia;
+  font-weight: 400;
+  font-size: 18px;
+  background: var(--white);
+  color: var(--black);
+  width: 100%;
+  height: 204px;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.1s linear;
+
+  &:hover {
+    color: var(--white);
+    background: var(--purple);
+
+    .figure {
+      transform: translateY(-10px);
+    }
+
+    path {
+      fill: var(--white);
+    }
+  }
+
+  @media all and (max-width: 960px) {
+    flex-basis: calc(49%);
+  }
+
+  @media all and (max-width: 640px) {
+    flex-basis: calc(48%);
+    height: 184px;
+    font-size: 16px;
+  }
+}
+
+.shortTile {
+  composes: tile;
+
+  @media all and (max-width: 940px) {
+    height: 65px;
+  }
+}
+
+.gridTile {
+  composes: tile;
+  width: auto;
+  margin: 0;
+}
+
+.twoRowTile {
+  composes: gridTile;
+  height: 104px;
+
+  @media all and (max-width: 768px) {
+    height: 70px;
+  }
+}
+
+.threeRowTile {
+  composes: gridTile;
+  height: 70px;
+}
+
+.figure {
+  transition: transform 0.3s;
+}
+
+.labelLarge {
+  font-size: 24px;
+
+  @media all and (max-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.applied {
+  border: 2px solid var(--purple);
+  color: var(--purple);
+}
+
+.negativeApplied {
+  border: 2px solid var(--grey);
+  color: var(--dark-grey);
+
+  &:hover {
+    background: var(--grey);
+  }
+
+  span,
+  figcaption {
+    text-decoration: line-through;
+  }
+}

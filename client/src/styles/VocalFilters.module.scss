@@ -1,0 +1,29 @@
+.icon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mic {
+  font-size: 80px;
+}
+
+.vocalType {
+  font-size: 2em;
+}
+
+@media all and (max-width: 640px) {
+  .mic {
+    font-size: 60px;
+  }
+
+  .icon {
+    margin-top: 0;
+  }
+
+  .vocalType {
+    font-size: 1.5em;
+  }
+}

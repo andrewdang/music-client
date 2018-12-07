@@ -1,0 +1,38 @@
+.filterList {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 460px;
+  padding-left: 1em;
+  margin-right: 3em;
+
+  @media all and (max-width: 640px) {
+    margin-right: 1em;
+  }
+}
+
+.name {
+  cursor: pointer;
+  margin-left: 0.5em;
+  margin-bottom: 3px;
+  font-family: "elena-web-basic", georgia;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14286em;
+  color: #333;
+  display: flex;
+
+  &:hover .closeIcon {
+    opacity: 1;
+    font-weight: bold;
+    margin-top: 1px;
+  }
+}
+
+.clearAll:hover {
+  text-decoration: underline;
+}
+
+.closeIcon {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
